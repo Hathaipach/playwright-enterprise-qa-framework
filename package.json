@@ -1,0 +1,1 @@
+{"name":"playwright-enterprise-qa-framework","version":"1.0.0","private":true,"scripts":{"test":"playwright test","typecheck":"tsc --noEmit","report":"playwright show-report","smoke":"playwright test --grep @smoke"},"devDependencies":{"@playwright/test":"1.56.1","@types/node":"22.15.3","typescript":"5.9.3","dotenv":"17.2.3"}}
