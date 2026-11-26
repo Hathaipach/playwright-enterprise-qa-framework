@@ -9,7 +9,7 @@ permissions:
   contents: read
 jobs:
   qa-check:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 
     timeout-minutes: 20
     env:
       TEST_ENV: local
@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm install
+      - run: npm ci
       - run: npm run typecheck
       - run: npx playwright install --with-deps chromium webkit
       - run: npm test
